@@ -1,0 +1,868 @@
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Kdam+Thmor+Pro&family=Montserrat:wght@100&display=swap');
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            
+            header {
+                background: rgba(83, 74, 74, 0.6);
+                border-bottom: 1px solid rgb(255, 255, 255);
+                width: 100%;
+                position: fixed;
+                z-index: 999;
+            }
+            
+            body {
+                background: #333;
+                color: #fff;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .navbar {
+                display: flex;
+                min-height: 70px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 24px;
+            }
+            
+            .nav-branding {
+                font-size: 2rem;
+                padding-left: 3px;
+                display: none;
+            }
+            
+            .nav-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                font-weight: bolder;
+                padding-left: 30%;
+                font-family: Arial, Helvetica, sans-serif;
+                gap: 30px;
+            }
+            
+            .nav-link {
+                transition: 0.7s ease;
+                padding: 10px 25px;
+                color: #ffff;
+                font-size: 16px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .nav-link:hover {
+                background: rgba(177, 167, 167, 0.7);
+                border-radius: 6px;
+            }
+            
+            .hamburger {
+                display: none;
+                cursor: pointer;
+            }
+            
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: white;
+            }
+            
+            section#home {
+                height: 100vh;
+                background: rgba(71, 70, 70, 0.7) url(gg.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: darken;
+                background-color: rgb(250, 1, 1);
+            }
+            
+            section#home .me3 {
+                position: absolute;
+                width: 100%;
+                height: 680px;
+                padding-left: 40%;
+                margin-top: 40px;
+            }
+            
+            section#home .tagline {
+                position: absolute;
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: 25%;
+                color: #f6bd60;
+                margin-left: 3%;
+            }
+            
+            section#home .tagline2 {
+                position: absolute;
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #f6bd60;
+                margin-top: 30%;
+                margin-left: 6%;
+            }
+            
+            section#home .define {
+                position: absolute;
+                font-size: 15px;
+                margin-top: 23%;
+                margin-left: 9%;
+                font-style: italic;
+                color: white;
+            }
+            
+            section#aboutme {
+                position: relative;
+                height: 750px;
+                width: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background: url(yay.jpg);
+                background-position-x: 85%;
+            }
+            
+            section#aboutme {
+                position: relative;
+                height: 750px;
+                width: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background: url(yay.jpg);
+                background-position-x: 85%;
+            }
+            
+            section#aboutme .logo {
+                position: absolute;
+                height: 100px;
+                width: 160px;
+                margin-left: 48%;
+                margin-top: 5%;
+            }
+            
+            section#aboutme .line {
+                position: absolute;
+                width: 20%;
+                height: 4px;
+                background-color: #f6bd60;
+                margin-top: 115px;
+                margin-left: 30%;
+            }
+            
+            section#aboutme .line2 {
+                position: absolute;
+                width: 20%;
+                height: 4px;
+                background-color: #f6bd60;
+                margin-top: 115px;
+                margin-left: 58%;
+            }
+            
+            section#aboutme .picturebox {
+                position: absolute;
+                width: 300px;
+                height: 500px;
+                background: #e6dada;
+                overflow: auto;
+                margin-right: 70%;
+                margin-left: 80px;
+                margin-top: 165px;
+                box-shadow: 0 5px 15px rgba(141, 133, 133, 0.7);
+                opacity: 0.9;
+                color: #fff;
+                border-radius: 6px;
+                backdrop-filter: blur(30px);
+                background-clip: padding-box;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            
+            section#aboutme .jocelyn {
+                height: 150px;
+                width: 150px;
+                margin-top: 25px;
+                background-repeat: no-repeat;
+                margin-left: 74px;
+            }
+            
+            section#aboutme .personal {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: left;
+                font-family: cursive;
+                margin-left: 23px;
+                margin-top: 7px;
+            }
+            
+            section#aboutme p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                padding-left: 5%;
+                font-size: 25px;
+                text-transform: uppercase;
+                margin-left: 23px;
+            }
+            
+            section#aboutme .back {
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+            
+            section#aboutme .back li {
+                font-size: 15px;
+                color: white;
+                text-align: left;
+            }
+            
+            section#aboutme .background {
+                position: absolute;
+                width: 500px;
+                height: 300px;
+                background: #e6dada;
+                overflow: auto;
+                margin-right: 70%;
+                margin-left: 35%;
+                margin-top: 250px;
+                box-shadow: 0 5px 15px rgba(141, 133, 133, 0.7);
+                opacity: 0.9;
+                color: #fff;
+                border-radius: 6px;
+                backdrop-filter: blur(30px);
+                background-clip: padding-box;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            
+            section#aboutme .educational {
+                position: absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: left;
+                font-family: cursive;
+                text-indent: 10%;
+                margin-left: 23px;
+                margin-top: 27px;
+            }
+            
+            section#aboutme .bg {
+                position: absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 25px;
+                text-indent: 10%;
+                text-align: left;
+                text-transform: uppercase;
+                margin-left: 34%;
+                margin-top: 27px;
+            }
+            
+            section#aboutme .ground {
+                margin-left: 40px;
+                margin-top: 80px;
+            }
+            
+            section#aboutme .para {
+                text-indent: 42px;
+                font-size: 17px;
+                margin-top: 20px;
+                position: absolute;
+                text-transform: capitalize;
+                font-weight: lighter;
+            }
+            
+            section#aboutme .ina {
+                text-indent: 42px;
+                text-transform: capitalize;
+                font-size: 17px;
+                font-weight: lighter;
+                position: absolute;
+            }
+            
+            section#aboutme .ground li {
+                margin-top: 30px;
+            }
+            
+            section#aboutme .qoute {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                color: rgba(245, 245, 245, 0.7);
+                font-size: 25px;
+                margin-top: 15%;
+                margin-left: 78%;
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            section#aboutme .qoute ::before {
+                content: '\201c';
+                top: 10px;
+                left: -40px;
+            }
+            
+            section#aboutme .qoute ::after {
+                content: '\201d';
+                bottom: -30px;
+            }
+            
+            section#aboutme .explain {
+                position: absolute;
+                height: 200px;
+                width: 280px;
+                margin-left: 75%;
+                margin-top: 28%;
+                color: rgba(245, 245, 245, 0.7);
+                font-weight: lighter;
+                padding-top: 20px;
+            }
+            
+            section#aboutme .everything {
+                font-size: 13px;
+                text-transform: none;
+                text-align: justify;
+            }
+            
+            section#portfolio {
+                background: rgba(56, 49, 49, 0.7) url(port.jpg);
+                background-size: 100%;
+                height: 100vh;
+                width: 100%;
+                background-blend-mode: darken;
+            }
+            
+            section#portfolio .achieve {
+                position: absolute;
+                overflow: auto;
+                height: 100hv;
+                margin-left: 8%;
+                padding-top: 8%;
+            }
+            
+            section#portfolio .folio {
+                text-align: center;
+                width: 100%;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+            
+            section#portfolio .square {
+                margin: 12px;
+                float: left;
+                border: 1px solid rgb(63, 56, 56);
+                width: 250px;
+            }
+            
+            section#portfolio img {
+                width: 100%;
+                height: auto;
+            }
+            
+            section#contact {
+                height: 100vh;
+                background-color: rgba(155, 123, 123, 0.014)
+            }
+            
+            section#contact img {
+                position: absolute;
+                height: 350px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            
+            section#contact .get {
+                position: absolute;
+                margin-top: 8%;
+                font-family: arial;
+            }
+            
+            section#contact .get .ilove {
+                text-align: center;
+                width: 100%;
+                font-weight: 700px;
+                text-transform: uppercase;
+                margin-left: 90%;
+                font-size: 35px;
+                color: white;
+                font-weight: bolder;
+            }
+            
+            section#contact .get p {
+                width: 100%;
+                position: absolute;
+                font-size: 16px;
+                text-align: center;
+                margin-left: 90%;
+                font-family: arial;
+                color: white;
+            }
+            
+            section#contact .serve {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            
+            section#contact .service {
+                height: 300px;
+                width: 280px;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                margin-left: 15%;
+                margin-top: 20%;
+                border-radius: 6px;
+                backdrop-filter: blur(15px);
+                border: 2px solid transparent;
+                background-clip: padding-box;
+                text-align: center;
+            }
+            
+            section#contact .icando {
+                position: absolute;
+                font-size: 18px;
+                font-weight: bold;
+                margin-left: 20px;
+                margin-top: 25px;
+                text-align: left;
+            }
+            
+            section#contact .skill {
+                position: absolute;
+                font-size: 18px;
+                margin-left: 70px;
+                margin-top: 60px;
+                text-align: left;
+            }
+            
+            section#contact .details {
+                font-weight: lighter;
+                margin-top: 55%;
+            }
+            
+            section#contact .social {
+                height: 300px;
+                width: 280px;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                margin-left: 40%;
+                margin-top: 20%;
+                border-radius: 6px;
+                backdrop-filter: blur(15px);
+                border: 2px solid transparent;
+                background-clip: padding-box;
+                text-align: center;
+            }
+            
+            section#contact .contactHeader {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            
+            section#contact .media ul li {
+                display: flex;
+                text-decoration: none;
+            }
+            
+            section#contact .number {
+                font-size: 25px;
+                padding: 10px 25px;
+                margin-top: 5%;
+                text-align: left;
+            }
+            
+            section#contact .Pnumber {
+                font-size: 15px;
+                text-align: center;
+                margin-top: 29px;
+                font-weight: lighter;
+                margin-left: -10px;
+            }
+            
+            section#contact .email {
+                font-size: 25px;
+                padding: 10px 25px;
+                margin-top: -1%;
+                text-align: left;
+            }
+            
+            section#contact .Eemail {
+                font-size: 15px;
+                text-align: center;
+                margin-top: 11px;
+                font-weight: lighter;
+                margin-left: -10px;
+            }
+            
+            section#contact .visit {
+                position: relative;
+            }
+            
+            section#contact .visitme {
+                margin-top: 20px;
+                text-align: center;
+            }
+            
+            section#contact .fb {
+                position: absolute;
+                text-decoration: none;
+                color: #fff;
+                font-size: 35px;
+                align-items: center;
+                margin-top: 20px;
+                margin-left: -60px;
+            }
+            
+            section#contact .fb :hover {
+                color: rgba(161, 154, 154, 0.7);
+            }
+            
+            section#contact .sololearn {
+                position: absolute;
+                color: #fff;
+                font-size: 35px;
+                text-decoration: none;
+                margin-top: 20px;
+                margin-right: -60px;
+            }
+            
+            section#contact .location {
+                height: 300px;
+                width: 280px;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                margin-left: 65%;
+                margin-top: 20%;
+                border-radius: 6px;
+                backdrop-filter: blur(15px);
+                border: 2px solid transparent;
+                background-clip: padding-box;
+                text-align: center;
+            }
+            
+            section#contact .locationHeader {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 20px;
+            }
+            
+            section#contact .sololearn :hover {
+                color: rgba(161, 154, 154, 0.7);
+            }
+            
+            section#contact .address {
+                position: absolute;
+                font-size: 25px;
+                padding: 10px 25px;
+                margin-top: 12px;
+                margin-left: -52%;
+            }
+            
+            section#contact .text {
+                position: absolute;
+                font-size: 15px;
+                margin-top: 25px;
+                margin-left: 45px;
+            }
+            
+            section#contact .sitio {
+                position: absolute;
+                font-size: 25px;
+                padding: 10px 25px;
+                margin-top: 65px;
+                margin-left: -52%;
+            }
+            
+            section#contact .purok {
+                position: absolute;
+                font-size: 15px;
+                margin-top: 80px;
+                margin-left: 50px;
+            }
+            /*RESPONSIVE AREA*/
+            
+            @media (max-width:375px) {
+                .hamburger {
+                    position: fixed;
+                    display: block;
+                    z-index: 999;
+                    margin-left: 80%;
+                }
+                .hamburger.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .hamburger.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .hamburger.active .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+                .nav-menu {
+                    position: fixed;
+                    left: -120%;
+                    top: 70px;
+                    gap: 0;
+                    flex-direction: column;
+                    background: rgba(83, 74, 74, 0.6);
+                    width: 100%;
+                    padding-right: 25%;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                .nav-item {
+                    margin: 16px 0;
+                }
+                .nav-menu.active {
+                    left: 0;
+                }
+                section#home {
+                    margin-left: 2px;
+                    margin-top: 0%;
+                }
+                section#home .me3 {
+                    margin-left: -8%;
+                    padding-bottom: 60%;
+                    padding-top: 35%;
+                    padding-left: 13%;
+                }
+                section#home .define {
+                    font-size: 12px;
+                    margin-top: 150px;
+                    margin-left: 4%;
+                }
+                section#home .tagline {
+                    font-size: 20px;
+                    margin-top: 480px;
+                    margin-left: 6%;
+                    text-align: center;
+                }
+                section#home .tagline2 {
+                    font-size: 20px;
+                    margin-top: 510px;
+                    margin-left: 35%;
+                }
+                section#aboutme {
+                    margin-left: 2px;
+                    margin-top: 0%;
+                    width: 100%;
+                    height: 280vh;
+                    background-position-x: 55%;
+                }
+                section#aboutme .logo {
+                    margin-left: 30%;
+                }
+                section#aboutme .line {
+                    margin-left: 70px;
+                    margin-top: 65px;
+                }
+                section#aboutme .line2 {
+                    margin-left: 240px;
+                    margin-top: 65px;
+                }
+                section#aboutme .picturebox {
+                    width: 70%;
+                    margin-top: 40%;
+                    margin-left: 15%;
+                    height: 80vh;
+                }
+                section#aboutme .jocelyn {
+                    margin-left: 22%;
+                }
+                section#aboutme .back {
+                    margin-left: 9%;
+                }
+                section#aboutme .background {
+                    width: 90%;
+                    margin-top: 200%;
+                    margin-left: 5%;
+                    height: 20%;
+                }
+                section#aboutme .educational {
+                    font-size: 20px;
+                    margin-left: 5%;
+                }
+                section#aboutme .bg {
+                    font-size: 20px;
+                    margin-top: 20%;
+                    margin-left: 29%;
+                }
+                section#aboutme .ground {
+                    margin-left: 2px;
+                    margin-top: 100px;
+                    padding: 0 30px;
+                }
+                section#aboutme .ina {
+                    font-size: 13px;
+                    text-indent: -2px;
+                    padding-top: 4px;
+                    margin-top: 2px;
+                }
+                section#aboutme .para {
+                    padding-top: 4px;
+                    font-size: 13px;
+                    text-indent: -2px;
+                }
+                section#aboutme li {
+                    font-weight: bold;
+                    margin-left: -10px;
+                    padding-top: 5%;
+                }
+                section#aboutme .qoute {
+                    margin-top: 320%;
+                    font-size: 15px;
+                    margin-left: 18%;
+                    width: 70%;
+                    font-size: 35px;
+                    color: white;
+                    font-family: 'Dancing Script', cursive;
+                }
+                section#aboutme .explain {
+                    margin-top: 380%;
+                    margin-left: 8%;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                section#portfolio {
+                    margin-left: 2px;
+                    margin-top: 0%;
+                    width: 100%;
+                    height: 232vh;
+                }
+                section#portfolio .folio {
+                    font-size: 18px;
+                    margin-left: -15px;
+                }
+                section#portfolio .square {
+                    margin: 12px;
+                    width: 220px;
+                    margin-left: 12%;
+                }
+                section#contact {
+                    height: 170vh;
+                }
+                section#contact img {
+                    width: 100%;
+                    height: 35vh;
+                }
+                section#contact .get .ilove {
+                    margin-left: 4%;
+                    font-size: 25px;
+                    color: white;
+                    margin-top: 13%;
+                }
+                section#contact .get p {
+                    right: 0%;
+                    color: white;
+                    margin-top: 5%;
+                    width: 90%;
+                }
+                section#contact .service {
+                    margin-top: 55%;
+                    width: 60%;
+                    height: 35%;
+                    margin-left: 20%;
+                }
+                section#contact .serve {
+                    font-size: 20px;
+                }
+                section#contact .icando {
+                    font-size: 15px;
+                }
+                section#contact .skill {
+                    font-size: 14px;
+                }
+                section#contact .details {
+                    font-size: 15px;
+                }
+                section#contact .social {
+                    margin-top: 125%;
+                    width: 60%;
+                    height: 39%;
+                    margin-left: 20%;
+                }
+                section#contact .contactHeader {
+                    font-size: 20px;
+                }
+                section#contact .number {
+                    font-size: 20px;
+                    margin-left: 32%;
+                    margin-top: -1%;
+                }
+                section#contact .Pnumber {
+                    font-size: 15px;
+                    margin-top: 18%;
+                    margin-left: -35%;
+                }
+                section#contact .email {
+                    font-size: 20px;
+                    margin-top: -2%;
+                    padding-left: 45%;
+                    position: absolute;
+                }
+                section#contact .Eemail {
+                    margin-top: 15%;
+                    margin-left: 20px;
+                }
+                section#contact .visitme {
+                    font-size: 20px;
+                    margin-top: 6%;
+                }
+                section#contact .fb {
+                    font-size: 35px;
+                    margin-top: 5%;
+                    margin-left: -20%;
+                }
+                section#contact .fb:hover {
+                    color: rgba(161, 154, 154, 0.7);
+                }
+                section#contact .sololearn {
+                    font-size: 35px;
+                    margin-top: 5%;
+                }
+                section#contact .sololearn:hover {
+                    color: rgba(161, 154, 154, 0.7);
+                }
+                section#contact .location {
+                    margin-left: 20%;
+                    width: 60%;
+                    height: 35vh;
+                    margin-top: 202%;
+                }
+                section#contact .locationHeader {
+                    font-size: 20px;
+                }
+                section#contact .address {
+                    padding-left: 45%;
+                    margin-top: 2%;
+                }
+                section#contact .text {
+                    margin-left: 5%;
+                    font-size: 15px;
+                    margin-top: 20%;
+                }
+                section#contact .sitio {
+                    padding-left: 45%;
+                    margin-top: 40%;
+                }
+                section#contact .purok {
+                    margin-top: 60%;
+                    margin-left: 15%;
+                }
+            }
+            /*RESPONSIVE*/
